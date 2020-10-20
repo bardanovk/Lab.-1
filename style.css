@@ -1,7 +1,7 @@
-/*Импорт шрифта Oswald*/
+/* Импорт шрифта Oswald */
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
-/*Стилизация страницы. Размещение объектов в правильных положениях*/
+/* Стилизация страницы. Размещение объектов в правильных положениях */
 html{
     height: 100vh;
 }
@@ -21,7 +21,7 @@ body{
     align-items: center;
 }
 
-/*Стилизация поля ввода и кнопки проверки*/
+/* Стилизация поля ввода и кнопки проверки */
 .ipInput, .checkButton{
     font-family: 'Oswald', sans-serif;
     margin: 10px;
@@ -38,7 +38,7 @@ body{
     width: 10em;
 }
 
-/*Обработка наведения и нажатия на кнопку*/
+/* Обработка наведения и нажатия на кнопку */
 .checkButton:hover{
     background-color: rgb(204, 197, 197);    
 }
@@ -47,12 +47,12 @@ body{
     background-color: rgb(156, 153, 153);  
 }
 
-/*Сокрытие рамок выдения*/
+/* Сокрытие рамок выдения */
 input, button:focus {
     outline: none;
 }
 
-/*Стилизация сообщения*/
+/* Стилизация сообщения */
 .alert{
     opacity: 0;
     animation: invisible .5s 1; 
@@ -64,7 +64,7 @@ input, button:focus {
     color: white;
     font-size: 2em;
     width: 100vw;
-    /*Анимация появления*/        
+    /* Анимация появления */        
     animation: invisible 2s 0s;
 }
 
@@ -75,7 +75,7 @@ input, button:focus {
     background-color: seagreen;
 }
 
-/*Описание амимации*/
+/* Описание амимации */
 @keyframes invisible {
     0% {
         opacity: 0;        
@@ -89,7 +89,7 @@ input, button:focus {
     }
 }
 
-/*Скрытие подсказки внутри поля ввода. Оптимизированно для каждого браузера*/
+/* Скрытие подсказки внутри поля ввода. Оптимизированно для каждого браузера */
 :focus::-webkit-input-placeholder {
     color: transparent
   }
