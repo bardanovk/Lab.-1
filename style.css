@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+html{
+    height: 100vh;
+}
+body{
+    font-family: 'Oswald', sans-serif;    
+    padding-top: 30vh;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.mainForm{
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;    
+    align-items: center;
+}
+
+.ipInput, .checkButton{
+    font-family: 'Oswald', sans-serif;
+    margin: 10px;
+    background-color: rgb(233, 225, 225);
+    border: 2px solid rgb(136, 170, 146);
+    border-radius: 20px; 
+}
+.ipInput{
+    text-align: center;
+    font-size: 2em;
+}
+.checkButton{
+    font-size: 1.3em;
+    width: 10em;
+}
+.checkButton:hover{
+    background-color: rgb(204, 197, 197);    
+}
+
+.checkButton:active{
+    background-color: rgb(156, 153, 153);  
+}
+input, button:focus {
+    outline: none;
+}
+
+.alert{
+    opacity: 0;
+    animation: invisible .5s 1; 
+	animation-fill-mode: forwards; 
+    position: absolute;
+    bottom: 0 ;
+    text-align: center;
+    padding:0 20px 0 20px;
+    color: white;
+    font-size: 2em;
+    width: 100vw;    
+    
+    animation: invisible 2s 0s;
+}
+
+.error{
+    background-color: rgb(139, 19, 19);
+}
+.ok{
+    background-color: seagreen;
+}
+
+@keyframes invisible {
+    0% {
+        opacity: 0;
+        
+    }
+    
+    80% {
+        opacity: 1;
+        
+        
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+:focus::-webkit-input-placeholder {
+    color: transparent
+  }
+  
+  :focus::-moz-placeholder {
+    color: transparent
+  }
+  
+  :focus:-moz-placeholder {
+    color: transparent
+  }
+  
+  :focus:-ms-input-placeholder {
+    color: transparent
+  }
