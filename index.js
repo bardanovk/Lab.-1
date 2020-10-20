@@ -1,8 +1,13 @@
+document.querySelector('.ipInput').addEventListener('keydown', function (k) {
+    if (k.keyCode === 13) {
+        checkIp()
+    }
+})
+
 function checkIp() {
     let inputValue = document.querySelector('.ipInput').value
     let arrayInput = inputValue.split('.')
     itsIp = checkArray(arrayInput)
-
 
     if (itsIp) {
 

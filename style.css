@@ -68,14 +68,11 @@ input, button:focus {
 
 @keyframes invisible {
     0% {
-        opacity: 0;
-        
+        opacity: 0;        
     }
     
     80% {
         opacity: 1;
-        
-        
     }
     100% {
         opacity: 0;
