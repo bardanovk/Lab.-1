@@ -9,16 +9,16 @@
 </head>
 
 <body>
-
+    <!-- Рабочая форма -->
     <div class="mainForm">
-        <input class="ipInput" id="ip" placeholder="Введите ip-адрес" />
+        <!-- Поле воода. Ограничение 32 символа -->
+        <input class="ipInput" id="ip" placeholder="Введите ip-адрес" maxlength="32" />
+        <!-- Кнопка "Проверить". При нажатии запускается функиця checkIp -->
         <button class="checkButton" onclick="checkIp()">Проверить</button>
-
     </div>
-    <div class="message">
-
-    </div>
-    <!--<p class="alert error">Это не ip-адрес</p>-->
+    <!-- Блок сообщения -->
+    <div class="message"></div>
+    <!-- Подключение JS-Скрипта -->
     <script src="index.js"></script>
 </body>
 
