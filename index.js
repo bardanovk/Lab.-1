@@ -10,7 +10,6 @@ function checkIp() {
     itsIp = checkArray(arrayInput)
 
     if (itsIp) {
-
         document.querySelector('.message').innerHTML = "<p class=\"alert ok\">Это ip-адрес</p>"
     }
     else
